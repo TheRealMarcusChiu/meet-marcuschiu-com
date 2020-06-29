@@ -76,6 +76,7 @@ socket.emit('create or join', room);
 function gotStream(stream) {
   localStream = stream;
   localVideo.srcObject = stream;
+  sendMessage('got user media'); 
   if (isInitiator) {
     maybeStart();
   }
