@@ -1,8 +1,4 @@
 #! /bin/bash
 
-# server is using nvm, so source .bashrc into to activate it
-# this allows us to use `node`
-source /home/marcuschiu/.bashrc
-
 cd /home/marcuschiu/meet-marcuschiu-com
-node index.js
+/home/marcuschiu/.nvm/versions/node/v13.10.1/bin/node index.js
